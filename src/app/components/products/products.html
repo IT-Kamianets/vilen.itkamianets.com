@@ -1,0 +1,21 @@
+<section id="products" class="py-20 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 bg-blue-400/10 border border-blue-400/20 text-blue-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+        Наші напрямки
+      </div>
+      <h2 class="section-title">Категорії товарів</h2>
+      <p class="section-subtitle">
+        Широкий асортимент електричного обладнання для дому, офісу та промислових об'єктів
+      </p>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      @for (category of categories; track category.id) {
+        <app-product-card [category]="category"></app-product-card>
+      }
+    </div>
+  </div>
+</section>

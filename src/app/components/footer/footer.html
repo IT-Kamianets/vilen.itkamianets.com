@@ -1,0 +1,31 @@
+<footer class="bg-gray-950 border-t border-gray-800 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <!-- Logo & Copyright -->
+      <div class="flex flex-col items-center md:items-start gap-2">
+        <a href="#" class="flex items-center gap-2 group">
+          <div class="w-7 h-7 bg-amber-400 rounded-lg flex items-center justify-center group-hover:bg-amber-300 transition-colors">
+            <lucide-icon name="zap" [size]="16" class="text-gray-900"></lucide-icon>
+          </div>
+          <span class="text-lg font-bold text-white">Вілен</span>
+        </a>
+        <p class="text-gray-500 text-sm">
+          © {{ currentYear }} Магазин «Вілен». Усі права захищено.
+        </p>
+        <p class="text-gray-600 text-xs">Кам'янець-Подільський, Хмельницька область</p>
+      </div>
+
+      <!-- Quick Links -->
+      <nav class="flex flex-wrap items-center gap-6 justify-center">
+        @for (link of links; track link.href) {
+          <a
+            [href]="link.href"
+            class="text-gray-400 hover:text-amber-400 transition-colors text-sm"
+          >
+            {{ link.label }}
+          </a>
+        }
+      </nav>
+    </div>
+  </div>
+</footer>

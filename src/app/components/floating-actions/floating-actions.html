@@ -1,0 +1,33 @@
+<div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-3">
+
+  <!-- Back to top — arrow -->
+  <button
+    (click)="scrollToTop()"
+    class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-amber-400 transition-all duration-300 group"
+    [class.opacity-0]="!showBackToTop()"
+    [class.pointer-events-none]="!showBackToTop()"
+    [class.translate-y-0]="showBackToTop()"
+    aria-label="На початок сторінки"
+  >
+    <svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Arrow head -->
+      <path d="M14 2L2 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M14 2L26 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Arrow stem -->
+      <path d="M14 2V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    <span class="text-[10px] tracking-widest uppercase font-medium">вгору</span>
+  </button>
+
+  <!-- Phone — pill -->
+  <a
+    href="tel:+380672550251"
+    class="relative flex items-center gap-2.5 bg-amber-400 hover:bg-amber-300 text-gray-900 font-semibold px-5 py-3 rounded-full shadow-lg shadow-amber-400/40 hover:shadow-amber-400/60 transition-all duration-200 hover:scale-105"
+    aria-label="Зателефонувати"
+  >
+    <span class="absolute inset-0 rounded-full bg-amber-400 animate-ping opacity-25"></span>
+    <lucide-icon name="phone" [size]="18"></lucide-icon>
+    <span class="hidden sm:inline text-sm">Зателефонувати</span>
+  </a>
+
+</div>

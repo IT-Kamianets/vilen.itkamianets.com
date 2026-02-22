@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { LucideAngularModule } from 'lucide-angular';
+import { ScrollAnimateDirective } from '../../directives/scroll-animate.directive';
+import { CountUpDirective } from '../../directives/count-up.directive';
 
 @Component({
   selector: 'app-about',
-  imports: [LucideAngularModule],
+  imports: [LucideAngularModule, ScrollAnimateDirective, CountUpDirective],
   templateUrl: './about.html',
   styles: ``,
 })

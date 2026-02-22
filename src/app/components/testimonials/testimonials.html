@@ -1,0 +1,45 @@
+<section id="testimonials" class="py-12 md:py-20 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16" scrollAnimate>
+      <div class="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/20 text-amber-400 text-sm font-medium px-4 py-2 rounded-full mb-4">
+        Відгуки клієнтів
+      </div>
+      <h2 class="section-title">Що кажуть наші клієнти</h2>
+      <p class="section-subtitle">
+        Нам довіряють сотні родин та бізнесів Кам'янець-Подільського
+      </p>
+    </div>
+
+    <!-- Reviews Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      @for (review of reviews; track review.name; let i = $index) {
+        <div
+          class="card-base flex flex-col gap-4 hover:border-amber-400/30 transition-all duration-300"
+          scrollAnimate [animateDelay]="(i * 0.1) + 's'"
+        >
+          <!-- Stars -->
+          <div class="flex gap-0.5 text-amber-400 text-lg leading-none">
+            ★★★★★
+          </div>
+
+          <!-- Review text -->
+          <p class="text-gray-300 text-sm leading-relaxed flex-1">«{{ review.text }}»</p>
+
+          <!-- Author -->
+          <div class="flex items-center gap-3 pt-3 border-t border-gray-700">
+            <div class="w-9 h-9 rounded-full bg-amber-400/15 flex items-center justify-center text-amber-400 font-bold text-sm flex-shrink-0">
+              {{ review.name[0] }}
+            </div>
+            <div>
+              <div class="text-white text-sm font-medium">{{ review.name }}</div>
+              <div class="text-gray-500 text-xs">{{ review.date }}</div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

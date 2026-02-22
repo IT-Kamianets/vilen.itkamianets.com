@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { LucideAngularModule } from 'lucide-angular';
+import { ScrollAnimateDirective } from '../../directives/scroll-animate.directive';
 
 @Component({
   selector: 'app-why-us',
-  imports: [LucideAngularModule],
+  imports: [LucideAngularModule, ScrollAnimateDirective],
   templateUrl: './why-us.html',
   styles: ``,
 })

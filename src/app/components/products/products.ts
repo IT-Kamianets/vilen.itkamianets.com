@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ProductCard } from './product-card/product-card';
 import { ProductCategory } from '../../models/product.model';
+import { ScrollAnimateDirective } from '../../directives/scroll-animate.directive';
 
 @Component({
   selector: 'app-products',
-  imports: [ProductCard],
+  imports: [ProductCard, ScrollAnimateDirective],
   templateUrl: './products.html',
   styles: ``,
 })

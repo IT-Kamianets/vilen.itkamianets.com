@@ -20,8 +20,10 @@
           scrollAnimate [animateDelay]="(i * 0.1) + 's'"
         >
           <!-- Stars -->
-          <div class="flex gap-0.5 text-amber-400 text-lg leading-none">
-            ★★★★★
+          <div class="flex gap-0.5 text-lg leading-none">
+            @for (star of [1,2,3,4,5]; track star) {
+              <span [class]="star <= review.rating ? 'text-amber-400' : 'text-gray-600'">★</span>
+            }
           </div>
 
           <!-- Review text -->

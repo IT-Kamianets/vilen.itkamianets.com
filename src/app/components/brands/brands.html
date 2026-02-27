@@ -4,13 +4,13 @@
   <div class="flex overflow-hidden">
     <div class="marquee-track flex items-center">
       @for (brand of brands; track brand) {
-        <span class="text-gray-500 font-semibold text-sm sm:text-base whitespace-nowrap px-4 sm:px-8 hover:text-gray-300 transition-colors cursor-default">
+        <span class="text-gray-500 font-semibold text-sm sm:text-base whitespace-nowrap px-4 sm:px-8 cursor-default pointer-events-none">
           {{ brand }}
         </span>
         <span class="text-gray-700 select-none">·</span>
       }
       @for (brand of brands; track 'b' + brand) {
-        <span class="text-gray-500 font-semibold text-sm sm:text-base whitespace-nowrap px-4 sm:px-8 hover:text-gray-300 transition-colors cursor-default">
+        <span class="text-gray-500 font-semibold text-sm sm:text-base whitespace-nowrap px-4 sm:px-8 cursor-default pointer-events-none">
           {{ brand }}
         </span>
         <span class="text-gray-700 select-none">·</span>

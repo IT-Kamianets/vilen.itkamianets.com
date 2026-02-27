@@ -19,6 +19,7 @@ import {
   X,
   ChevronRight,
   Star,
+  Github,
 } from 'lucide-angular';
 
 export const appConfig: ApplicationConfig = {
@@ -44,6 +45,7 @@ export const appConfig: ApplicationConfig = {
         X,
         ChevronRight,
         Star,
+        Github,
       })
     ),
   ],

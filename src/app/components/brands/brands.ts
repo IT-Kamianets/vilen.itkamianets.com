@@ -13,9 +13,6 @@ import { Component } from '@angular/core';
       animation: marquee 28s linear infinite;
       width: max-content;
     }
-    .marquee-track:hover {
-      animation-play-state: paused;
-    }
   `,
 })
 export class Brands {

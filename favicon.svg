@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="lh">
+      <rect x="0" y="0" width="16" height="32"/>
+    </clipPath>
+    <clipPath id="rh">
+      <rect x="16" y="0" width="16" height="32"/>
+    </clipPath>
+    <clipPath id="cc">
+      <circle cx="16" cy="16" r="15"/>
+    </clipPath>
+  </defs>
+
+  <!-- Left half pink -->
+  <circle cx="16" cy="16" r="15" fill="#E8907A" clip-path="url(#lh)"/>
+  <!-- Right half blue -->
+  <circle cx="16" cy="16" r="15" fill="#9DC0D0" clip-path="url(#rh)"/>
+
+  <!-- Divider line -->
+  <rect x="15" y="1" width="2" height="30" fill="#1a1a1a" clip-path="url(#cc)"/>
+
+  <!-- V letter -->
+  <text x="8.5" y="21.5" font-family="Arial Black,sans-serif" font-size="12" font-weight="900" fill="#1a1a1a" text-anchor="middle">V</text>
+  <!-- A letter -->
+  <text x="24" y="21.5" font-family="Arial Black,sans-serif" font-size="12" font-weight="900" fill="#1a1a1a" text-anchor="middle">A</text>
+</svg>
